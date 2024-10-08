@@ -14,8 +14,8 @@ def home():
 @app.route('/login', methods = ['GET', 'POST'])
 def login():
     if request.method == 'POST':
-        username = request.form.get('exampleInputEmail1')
-        password = request.form.get('exampleInputPassword1')
+        username = request.form.get('InputEmail1')
+        password = request.form.get('InputPassword1')
         professional_ = request.form.get('flexSwitchCheck')
         if username == 'admin@admin':
             admin_password = 'admin'
