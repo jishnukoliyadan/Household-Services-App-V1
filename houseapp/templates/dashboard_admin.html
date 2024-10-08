@@ -1,0 +1,116 @@
+{% extends "base.html" %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block content %}
+    <section id="service-history" class="container mt-5">
+        <p class="h4 text-danger mb-3">Services</p>
+        <table class="table table-bordered text-center">
+            <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Service Name</th>
+                    <th scope="col">Base Price</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>Edit / Delete</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>Edit / Delete</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="d-flex justify-content-end">
+            <a class="btn btn-outline-primary btn-sm" href="{{ url_for('new_service') }}" role="button">+ New Service</a>
+        </div>
+
+        <div class="modal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Modal body text goes here.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="service-history" class="container mt-5">
+        <p class="h4 text-danger mb-3">Professionals</p>
+        <table class="table table-bordered text-center">
+            <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Experience (Yrs)</th>
+                    <th scope="col">Service Name</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>Approve / Reject / Delete</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                    <td>Approve / Reject / Delete</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="service-history" class="container mt-5">
+        <p class="h4 text-danger mb-3">Service Requests</p>
+        <table class="table table-bordered text-center">
+            <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Assigned Professional (if any)</th>
+                    <th scope="col">Requested Date</th>
+                    <th scope="col">Status (R / A / C)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>Requested / Accepted / Closed</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>Requested / Accepted / Closed</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    {% endblock %}

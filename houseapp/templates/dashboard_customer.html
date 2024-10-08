@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block content %}
+
+<section id="category-selection" class="card container mt-5 p-3">
+    <div class="card-body text-center fs-5 fw-bold text-primary">
+        Looking for ?
+    </div>
+    <div class="row row-cols-2 row-cols-md-4 g-3 justify-content-center">
+        <div class="col">
+            <div class="card" style="width: 205px; height: 205px;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL4G9QG2k27o6GFjhZe9p30QFf4BzntjM6mw&s"
+                    class="card-img-top" alt="...">
+                <a href="#" class="stretched-link"></a>
+                <div class="card-body align-content-center text-center">
+                    <h5 class="card-title">Card title</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" style="width: 205px; height: 205px;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL4G9QG2k27o6GFjhZe9p30QFf4BzntjM6mw&s"
+                    class="card-img-top" alt="...">
+                <a href="#" class="stretched-link"></a>
+                <div class="card-body align-content-center text-center">
+                    <h5 class="card-title">Card title</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="service-history" class="container mt-5">
+    <p class="h4 text-danger mb-3">Service History</p>
+    <table class="table table-bordered text-center">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Service Name</th>
+                <th scope="col">Professional Name</th>
+                <th scope="col">Phone No.</th>
+                <th scope="col">Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+                <td>@mdo</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+                <td>@fat</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+{% endblock %}
