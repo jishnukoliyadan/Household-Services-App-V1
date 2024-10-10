@@ -10,6 +10,7 @@
 </head>
 
 <body>
+
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container">
             <span class="navbar-brand navbar-text fs-4 fw-bolder text-primary">Welcome to {% block title %} {% endblock
@@ -30,13 +31,15 @@
                         <a class="nav-link active" aria-current="page" href="#">Summary</a>
                     </li>
                     <li class="nav-item me-2">
-                        <a class="nav-link active" aria-current="page" href="#">Logout</a>
+                        <a class="nav-link active" aria-current="page" href="#">Profile</a>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a class="nav-link active" aria-current="page" href="{{ url_for('logout') }}">Logout</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-
 
     {% block content %}
     {% endblock %}
